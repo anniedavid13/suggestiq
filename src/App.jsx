@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import StoreList from './pages/StoreList';
 import StoreSetup from './pages/StoreSetup';
@@ -10,7 +10,7 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app-container" style={{ display: 'flex', height: '100vh', overflow: 'hidden' }}>
         <Sidebar />
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', backgroundColor: '#fff', overflow: 'hidden' }}>
@@ -55,7 +55,7 @@ function App() {
           </main>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
